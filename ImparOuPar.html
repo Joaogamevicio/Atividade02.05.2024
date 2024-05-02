@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ImparOuPar</title>
+</head>
+<body>
+  <h1>Impar ou Par:</h1> 
+  <p>Nome:<span id="Nome"></span></p>
+  <p>Numero:<span id="Numero"></span></p>
+  <p>Resultado:<span id="Resultado"></span></p>
+<script>
+   let Nome;
+   let Numero;
+   let Resultado;
+   
+   Nome = (prompt(" Digite seu nome :"));  
+   Numero = Number(prompt("Digite um numero:")); 
+
+
+
+   Numero =  Numero % 2
+
+   if(Numero == 0){
+    Resultado = "A conta deu par :" + Numero;
+   }         
+  else{
+    Resultado = " A conta deu impar :" + Numero;  
+  }
+  
+   document.getElementById("Nome").innerHTML = Nome;
+   document.getElementById("Numero").innerHTML = Numero;
+   document.getElementById("Resultado").innerHTML = Resultado;
+
+
+
+
+</script> 
