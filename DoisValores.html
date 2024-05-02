@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoisValores</title>
+</head>
+<body>
+  <h1>Descubra a diferença de dois valores:</h1> 
+  <p>Nome:<span id="Nome"></span></p>
+  <p>Valor1:<span id="Valor1"></span></p>
+  <p>Valor2:<span id="Valor2"></span></p>
+  <p>Resultado:<span id="Resultado"></span></p>
+<script>
+   let Nome;
+   let Valor1;
+   let Valor2;
+   let Resultado;
+   
+   Nome = (prompt("Digite seu nome :"));
+   
+
+   Valor1 = Number(prompt("Digite o primeiro valor:")) 
+   Valor2 = Number (prompt("Digite o segundo valor:")) 
+
+
+  if(Valor1 < Valor2){
+    Resultado = Valor2 - Valor1
+  }else{
+    Resultado = Valor1 - Valor2
+  }
+
+
+
+
+   document.getElementById("Nome").innerHTML = Nome;
+   document.getElementById("Valor1").innerHTML = Valor1;
+   document.getElementById("Valor2").innerHTML = Valor2;
+   document.getElementById("Resultado").innerHTML = Resultado;
+
+
+
+</script> 
